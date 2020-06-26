@@ -1,0 +1,12 @@
+{% extends "page.njk" %}
+
+{% block body %}
+    {% if message %}
+        <h1>{{ message }}</h1>
+        {% if details %}
+            <p>{{ details }}</p>
+        {% endif %}
+    {% else %}
+        <h1>Error 404: Not found</h1>
+    {% endif %}
+{% endblock %}

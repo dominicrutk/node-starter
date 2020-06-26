@@ -1,0 +1,51 @@
+{% extends "page.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+{% endblock %}
+
+{% block body %}
+    <div class="ui middle aligned center aligned grid">
+        <div class="column">
+            <form class="ui large form">
+                <div class="ui segment">
+                    <h2 class="ui image header">
+                        <img src="/img/logo.jpg" alt="black square" class="image">
+                        <div class="content">
+                            Login
+                        </div>
+                    </h2>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input id="username-input" type="text" name="username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="lock icon"></i>
+                            <input id="password-input" type="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <button type="button" id="login-button" class="ui fluid large button">Log in</button>
+                    </div>
+                    <div class="field">
+                        <button type="button" id="signup-button" class="ui fluid large button">Sign up</button>
+                    </div>
+                    <div id="login-error-message-box" class="ui hidden negative icon message">
+                        <i class="exclamation circle icon"></i>
+                        <div class="content">
+                            <div class="header">Error logging in</div>
+                            <p id="login-error-message-text">Username or password is incorrect</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="/js/login.js"></script>
+{% endblock %}

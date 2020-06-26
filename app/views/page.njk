@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} « node-starter</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    {# Fomantic-UI #}
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.5/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.5/dist/semantic.min.js"></script>
+
+    {# Custom CSS #}
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    {% block head %}{% endblock %}
+</head>
+<body>
+{# Navigation #}
+{% include "navigation.njk" %}
+
+{# Page Content #}
+<div class="ui container">
+    {% block body %}{% endblock %}
+</div>
+
+{# JS #}
+<script src="/js/main.js"></script>
+{% block js %}{% endblock %}
+</body>
+</html>

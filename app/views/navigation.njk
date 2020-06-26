@@ -1,0 +1,24 @@
+{% if navigationId !== 'hidden' %}
+    <div id="navigation-menu" class="ui stackable menu">
+        <div class="ui container">
+            <a href="/" class="item {% if navigationId === 'home' %} active {% endif %}">
+                <img src="/img/logo.jpg" alt="black square" id="navigation-logo"> Home
+            </a>
+            <a href="/page1" class="item {% if navigationId === 'page1' %} active {% endif %}">Page 1</a>
+            <a href="/page2" class="item {% if navigationId === 'page2' %} active {% endif %}">Page 2</a>
+            <div class="ui dropdown item">
+                Dropdown
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="/page3" class="item {% if navigationId === 'page3' %} active {% endif %}">Page 3</a>
+                    <a href="/page4" class="item {% if navigationId === 'page4' %} active {% endif %}">Page 4</a>
+                    <a href="/page5" class="item {% if navigationId === 'page5' %} active {% endif %}">Page 5</a>
+                </div>
+            </div>
+            <div class="right menu">
+                <a href="/page6" class="item {% if navigationId === 'page6' %} active {% endif %}">Page 6</a>
+                <div id="log-out-button" class="link item">Log Out</div>
+            </div>
+        </div>
+    </div>
+{% endif %}

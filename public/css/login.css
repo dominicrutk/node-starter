@@ -1,0 +1,15 @@
+body > .container, body > .container > .grid {
+    height: 100%;
+}
+
+body > .container > .grid > .column {
+    max-width: 450px;
+}
+
+form > .ui.segment .field:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.message {
+    text-align: left;
+}

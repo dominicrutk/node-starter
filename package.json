@@ -1,0 +1,33 @@
+{
+  "name": "node-starter",
+  "version": "0.0.0",
+  "description": "A node template project",
+  "main": "app.js",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "start": "nodemon -e html,njk,css,js,json,env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominicrutk/node-starter.git"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs-extra": "^9.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.3.0",
+    "mariadb": "^2.4.0",
+    "nunjucks": "^3.2.1",
+    "sequelize": "^5.21.12",
+    "serve-favicon": "^2.5.0"
+  }
+}
